@@ -44,7 +44,7 @@ function loadFlag(level) {
   document.getElementById("flagImage").src = `flags/${currentFlag}.jpg`;
 
   if (timer) clearInterval(timer);
-  timeLeft = level === "easy" ? 20 : level === "medium" ? 15 : 10;
+  timeLeft = level === "Easy" ? 20 : level === "Medium" ? 15 : 10;
   document.getElementById("timer").textContent = timeLeft;
 
   timer = setInterval(() => {
@@ -61,7 +61,7 @@ function loadFlag(level) {
 function submitAnswer() {
   const userAnswer = document.getElementById("answerInput").value.trim().toLowerCase();
   const difficulty = document.getElementById("difficulty").value;
-  const points = difficulty === "easy" ? 2 : difficulty === "medium" ? 5 : 10;
+  const points = difficulty === "Easy" ? 2 : difficulty === "Medium" ? 5 : 10;
 
   if (userAnswer === currentFlag.toLowerCase()) {
     score += points;
