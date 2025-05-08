@@ -1,0 +1,80 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+/* Screens default hidden */
+.screen {
+  display: none;
+  height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  color: black;
+}
+
+/* Individual screen backgrounds */
+#welcomePage {
+  background: url('welcome.png') center/cover no-repeat;
+  display: block; /* Show first */
+}
+
+.welcome-button {
+	width: 2000px;
+	height: 1000px;
+	background-color: transparent;
+	border: none;
+}
+
+#rulesPage {
+  background: url('rules.png') center/cover no-repeat;
+}
+
+.rules-button {
+	width: 2000px;
+	height: 1000px;
+	background-color: transparent;
+	border: none;
+}
+
+#usernamePage {
+  background: url('username.png') center/cover no-repeat;
+}
+
+.username {
+	width: 250px;
+	height: 30px;
+	border: black;
+	top: 250px;
+	left: 1000px;
+}
+.checkIn-button {
+	width: 2000px;
+	height: 1000px;
+	background-color: transparent;
+	border: none;
+}
+
+#levelsPage {
+  background: url('levels.png') center/cover no-repeat;
+}
+
+#gamePage {
+  background: url('game.png') center/cover no-repeat;
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
